@@ -6,6 +6,9 @@ Solution Approach   :
  Slightly altered the interface contract for methods in 'CityMapKata' trait in order to avoid side effects, the graph
  object returned from 'constructMap' is immutable and can be safely used.
 
+ I found the Api apporach more efficient an Succint while compared to writing a custom impementaion of the Bredh-First-Search
+ or Dijkstra's algorithm inorder to traverse graphs.
+
  Improvements       :
  --------------------
  The approach uses basic features of Graph for Scala, even more sophisticated implementation is possible by creating custom

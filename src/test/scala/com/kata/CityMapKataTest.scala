@@ -5,7 +5,7 @@ import org.scalatest.matchers.ShouldMatchers
 import junit.framework.Assert
 
 /**
- * User: Pradeep Muralidharan
+ * User: PM
  * Date: 01/04/13
  */
 class CityMapKataTest extends FunSuite with ShouldMatchers {

@@ -8,7 +8,7 @@ import scalax.collection.GraphEdge._
 import scalax.collection.edge.LDiEdge
 
 /**
- * User: Pradeep Muralidharan
+ * User: PM
  * Date: 01/04/13
  */
 

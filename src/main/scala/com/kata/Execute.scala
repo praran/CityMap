@@ -2,7 +2,7 @@ package com.kata
 
 /**
  * Helper Class to execute and find journey possible.
- * User: Pradeep Muralidharan
+ * User: PM
  * Date: 01/04/13
  */
 object Execute {
