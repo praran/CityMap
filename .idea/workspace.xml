@@ -5,10 +5,10 @@
     <ignored path="CityMap.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364897037020" ignored="false" />
-    <file path="/Execute.scala" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364901501410" ignored="false" />
+    <file path="/Execute.scala" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1365081574724" ignored="false" />
     <file path="/fragment.java" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364902379142" ignored="false" />
     <file path="/Scala Console" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364847580603" ignored="false" />
-    <file path="/CityMapKata.scala" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364857538540" ignored="false" />
+    <file path="/CityMapKata.scala" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1365087446618" ignored="false" />
     <file path="/a.dummy" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364857418644" ignored="false" />
     <file path="/CityMapKataTest.scala" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364900731722" ignored="false" />
     <file path="/ReadMe.txt" changelist="2acef889-2666-4910-bec1-95b781261e05" time="1364903098595" ignored="false" />
@@ -60,8 +60,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/test/scala/com/kata/CityMapKataTest.scala" line="2" class="CityMapKataTest.scala" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -77,6 +76,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -89,7 +89,7 @@
       <file leaf-file-name="Execute.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/kata/Execute.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="16" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
+            <state line="5" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,7 @@
       <file leaf-file-name="CityMapKata.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/kata/CityMapKata.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="323" selection-end="323" vertical-scroll-proportion="-0.7254902">
+            <state line="62" column="1" selection-start="1864" selection-end="1864" vertical-scroll-proportion="2.6146789">
               <folding />
             </state>
           </provider>
@@ -107,10 +107,8 @@
       <file leaf-file-name="CityMapKataTest.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/com/kata/CityMapKataTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#18#47#0" expanded="true" />
-              </folding>
+            <state line="33" column="26" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,7 +116,7 @@
       <file leaf-file-name="ReadMe.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReadMe.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="42" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,9 +145,10 @@
         <option value="$PROJECT_DIR$/src/test/scala/com/bbc/kata/CityMapKataTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/bbc/kata/Execute.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/bbc/kata/CityMapKata.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/kata/CityMapKata.scala" />
         <option value="$PROJECT_DIR$/src/test/scala/com/kata/CityMapKataTest.scala" />
         <option value="$PROJECT_DIR$/ReadMe.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/kata/Execute.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/kata/CityMapKata.scala" />
       </list>
     </option>
   </component>
@@ -386,7 +385,7 @@
       <recent name="com.kata" />
     </key>
   </component>
-  <component name="RunManager" selected="ScalaTest.CityMapKataTest">
+  <component name="RunManager" selected="Application.Execute">
     <configuration default="false" name="CityMapKataTest.Graph should be empty if empty string is passed" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <module name="CityMap" />
       <setting name="path" value="com.bbc.kata.CityMapKataTest" />
@@ -399,42 +398,6 @@
       <setting name="testKind" value="Test name" />
       <setting name="showProgressMessages" value="true" />
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CityMapKataTest.Graph should ignore invalid strings" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="CityMap" />
-      <setting name="path" value="com.bbc.kata.CityMapKataTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="Graph should ignore invalid strings" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CityMapKataTest.Graph should not contain invalid or empty nodes" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <module name="CityMap" />
-      <setting name="path" value="com.bbc.kata.CityMapKataTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="Graph should not contain invalid or empty nodes" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -464,6 +427,22 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Execute" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.kata.Execute" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="CityMap" />
+      <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -570,28 +549,6 @@
       <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
-    <configuration default="false" name="Execute" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.bbc.com.kata.Execute" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CityMap" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="cm" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
       <module name="CityMap" />
       <setting name="vmparams4" value="-Djline.terminal=NONE" />
@@ -601,22 +558,36 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Application.Execute" />
-      <item index="1" class="java.lang.String" itemvalue="Scala Console.cm" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should be empty if empty string is passed" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should ignore invalid strings" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should not contain invalid or empty nodes" />
-      <item index="5" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph must contain all relevant nodes for a valid string " />
-      <item index="6" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest" />
+    <configuration default="false" name="CityMapKataTest.Graph should not contain invalid or empty nodes" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <module name="CityMap" />
+      <setting name="path" value="com.kata.CityMapKataTest" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="Graph should not contain invalid or empty nodes" />
+      <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Scala Console.cm" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should be empty if empty string is passed" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph must contain all relevant nodes for a valid string " />
+      <item index="3" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Execute" />
+      <item index="5" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should not contain invalid or empty nodes" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should not contain invalid or empty nodes" />
-        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph must contain all relevant nodes for a valid string " />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should be empty if empty string is passed" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should ignore invalid strings" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Execute" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest" />
+        <item index="2" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should not contain invalid or empty nodes" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph must contain all relevant nodes for a valid string " />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.CityMapKataTest.Graph should be empty if empty string is passed" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -654,26 +625,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1616" height="1216" extended-state="7" />
+    <frame x="1358" y="-8" width="1616" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44381493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39848915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44381493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947233" sideWeight="0.55618507" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967825" sideWeight="0.44853637" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55146366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24903475" sideWeight="0.44853637" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39848915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55146366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5553663" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -740,11 +711,6 @@
         <state line="19" column="12" selection-start="736" selection-end="736" vertical-scroll-proportion="0.46345812" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/assembla/scala-incubator/graph-core_2.10/1.6.1/graph-core_2.10-1.6.1-sources.jar!/scalax/collection/edge/Implicits.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="11" selection-start="2965" selection-end="2968" vertical-scroll-proportion="0.33217993" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.0/scala-library-2.10.0-sources.jar!/scala/package.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="53" selection-start="3332" selection-end="3332" vertical-scroll-proportion="0.0" />
@@ -790,12 +756,15 @@
         <state line="213" column="38" selection-start="9349" selection-end="9429" vertical-scroll-proportion="0.5828877" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/com/kata/CityMapKataTest.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/assembla/scala-incubator/graph-core_2.10/1.6.1/graph-core_2.10-1.6.1-sources.jar!/scalax/collection/edge/Implicits.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#18#47#0" expanded="true" />
-          </folding>
+        <state line="60" column="8" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.33301064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -806,23 +775,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReadMe.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/com/kata/CityMapKataTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="42" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
+        <state line="33" column="26" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kata/Execute.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
+        <state line="5" column="17" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/kata/CityMapKata.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="323" selection-end="323" vertical-scroll-proportion="-0.7254902">
+        <state line="62" column="1" selection-start="1864" selection-end="1864" vertical-scroll-proportion="2.6146789">
           <folding />
         </state>
       </provider>

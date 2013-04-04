@@ -31,7 +31,6 @@ object Routes extends CityMapKata {
 }
 
 sealed trait CityMapKata extends Extractors {
-
   /**
    * Construct the Graph representation of City Map using string representation of the Map
    * @param mapAsString
@@ -54,22 +53,21 @@ sealed trait CityMapKata extends Extractors {
   def getJourneyPath(graph: scalax.collection.Graph[String, scalax.collection.edge.LDiEdge], frm: String, to: String, byFoot: Boolean): Option[graph.Path] = {
     // extract the graph from the node
     def n(outer: String) = graph get outer
-
-    if (!graph.isEmpty) {
-      if (byFoot) {
-        return n(frm) shortestPathTo n(to)
-      } else {
-        return n(frm) shortestPathTo(n(to), edgeFilter = _.label == MAP_TRAVEL_BOTH)
-      }
-    }
-    return None
+    return graph.isEmpty match {
+          case false => byFoot match {
+                          case true=>  n(frm) shortestPathTo n(to)
+                          case false =>  n(frm) shortestPathTo(n(to), edgeFilter = _.label == MAP_TRAVEL_BOTH)
+                        }
+           case _   =>  None
+       }
   }
 }
 
 sealed trait Extractors {
+  // Constants
   val MAP_ROUTE_DELIMITER: String = ","
-  val MAP_TRAVEL_BOTH: String = "both"
-  val MAP_TRAVEL_FOOT: String = "foot"
+  val MAP_TRAVEL_BOTH:     String = "both"
+  val MAP_TRAVEL_FOOT:     String = "foot"
 
   /**
    * Extract the edges between nodes from the string representation of the Map
@@ -77,10 +75,8 @@ sealed trait Extractors {
    * @return
    */
   def extractEdges(str: String): Array[scalax.collection.edge.LDiEdge[String] with scalax.collection.GraphEdge.EdgeCopy[scalax.collection.edge.LDiEdge] {type L1 = String}] = {
-    // get the Array of routes and nodes
-    val inArray = str.split(MAP_ROUTE_DELIMITER)
     // Generate the Edge representation of the routes
-    val vEdges = for {str <- inArray
+    val vEdges = for {str <- str.split(MAP_ROUTE_DELIMITER)
                       if str.length == 3 && (str.charAt(1) == '=' || str.charAt(1) == '-')
                       frm = str.charAt(0).toString
                       to = str.charAt(2).toString
@@ -96,19 +92,14 @@ sealed trait Extractors {
    * @return
    */
   def extractNodes(str: String): List[String] = {
-    // get the Array of routes and nodes
-    val inArray = str.split(MAP_ROUTE_DELIMITER)
     // Extract all nodes from the string representation
-    val vNL = for {str <- inArray.toList
+    val vNL = for {str <- str.split(MAP_ROUTE_DELIMITER).toList
                    if str.length == 3 && (str.charAt(1) == '=' || str.charAt(1) == '-')
                    frm = str.charAt(0).toString
                    to = str.charAt(2).toString
                    rType = if (str.charAt(1) == '=') MAP_TRAVEL_BOTH else MAP_TRAVEL_FOOT
     } yield List(frm, to)
-
-    // Extract Distinct Nodes
-    val vNodes = vNL.flatMap(x => x).distinct
-
-    return vNodes
+    // Extract and return Distinct Nodes
+    return vNL.flatMap(x => x).distinct
   }
 }
