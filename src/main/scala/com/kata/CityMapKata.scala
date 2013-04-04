@@ -77,10 +77,10 @@ sealed trait Extractors {
   def extractEdges(str: String): Array[scalax.collection.edge.LDiEdge[String] with scalax.collection.GraphEdge.EdgeCopy[scalax.collection.edge.LDiEdge] {type L1 = String}] = {
     // Generate the Edge representation of the routes
     val vEdges = for {str <- str.split(MAP_ROUTE_DELIMITER)
-                      if str.length == 3 && (str.charAt(1) == '=' || str.charAt(1) == '-')
-                      frm = str.charAt(0).toString
-                      to = str.charAt(2).toString
-                      rType = if (str.charAt(1) == '=') MAP_TRAVEL_BOTH else MAP_TRAVEL_FOOT
+                      if str.length == 3 && (str.charAt(1).equals('=') || str.charAt(1).equals('-'))
+                      frm   = str.charAt(0).toString
+                      to    = str.charAt(2).toString
+                      rType = if (str.charAt(1).equals('=')) MAP_TRAVEL_BOTH else MAP_TRAVEL_FOOT
     } yield (frm ~+> to)(rType)
 
     return vEdges
@@ -94,10 +94,10 @@ sealed trait Extractors {
   def extractNodes(str: String): List[String] = {
     // Extract all nodes from the string representation
     val vNL = for {str <- str.split(MAP_ROUTE_DELIMITER).toList
-                   if str.length == 3 && (str.charAt(1) == '=' || str.charAt(1) == '-')
-                   frm = str.charAt(0).toString
-                   to = str.charAt(2).toString
-                   rType = if (str.charAt(1) == '=') MAP_TRAVEL_BOTH else MAP_TRAVEL_FOOT
+                   if str.length == 3 && (str.charAt(1).equals('=') || str.charAt(1).equals('-'))
+                   frm   = str.charAt(0).toString
+                   to    = str.charAt(2).toString
+                   rType = if (str.charAt(1).equals('=')) MAP_TRAVEL_BOTH else MAP_TRAVEL_FOOT
     } yield List(frm, to)
     // Extract and return Distinct Nodes
     return vNL.flatMap(x => x).distinct
