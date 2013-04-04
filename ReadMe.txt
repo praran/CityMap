@@ -1,13 +1,11 @@
 Solution Approach   :
 ---------------------
  Create an in memory graph representation of the City Map from the string representation of the city map.Inorder to find
- if journey is possible traverse the graph to find if the journey is possible. The graph representation is created using
+ if journey is possible traverse the graph between the specified nodes. The graph representation is created using
  Graph for Scala api, with the places as nodes and the edges with two labels either Foot or Both.
  Slightly altered the interface contract for methods in 'CityMapKata' trait in order to avoid side effects, the graph
  object returned from 'constructMap' is immutable and can be safely used.
 
- I found the Api apporach more efficient an Succint while compared to writing a custom impementaion of the Bredh-First-Search
- or Dijkstra's algorithm inorder to traverse graphs.
 
  Improvements       :
  --------------------
