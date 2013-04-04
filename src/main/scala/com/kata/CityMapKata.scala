@@ -55,10 +55,10 @@ sealed trait CityMapKata extends Extractors {
     def n(outer: String) = graph get outer
     return graph.isEmpty match {
           case false => byFoot match {
-                          case true=>  n(frm) shortestPathTo n(to)
+                          case true  =>  n(frm) shortestPathTo n(to)
                           case false =>  n(frm) shortestPathTo(n(to), edgeFilter = _.label == MAP_TRAVEL_BOTH)
                         }
-           case _   =>  None
+          case _     =>  None
        }
   }
 }
